@@ -330,7 +330,7 @@ $font-size-14px: 14px;
   .wrap-login {
     .box-support {
       .box-support__detail {
-        padding: 0px 30px;
+        padding: 0px 25px;
       }
     }
   }
@@ -338,9 +338,27 @@ $font-size-14px: 14px;
 
 @media only screen and(max-width:920px) {
   .wrap-login {
+    padding: 40px 40px 0px 40px;
+    .flex-login {
+      justify-content: space-between;
+      .flex50-right {
+        width: 40%;
+      }
+    }
     .box-support {
       .box-support__detail {
         padding: 0px 20px;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:870px) {
+  .wrap-login {
+    .box-support {
+      .box-support__detail {
+        width: 80%;
+        padding: 0px 30px;
       }
     }
   }
@@ -351,20 +369,44 @@ $font-size-14px: 14px;
     .box-support {
       .box-support__detail {
         width: 80%;
-        padding: 0px 40px;
+        padding: 0px 25px;
       }
     }
   }
 }
+
+@media only screen and(max-width:800px) {
+  .wrap-login {
+    .box-support {
+      .box-support__detail {
+        width: 80%;
+        padding: 0px 10px;
+      }
+    }
+  }
+}
+
+// @media only screen and(max-width:768px) {
+//   .wrap-login {
+//     .box-support {
+//       .box-support__detail {
+//         width: 80%;
+//         padding: 0px 14px;
+//       }
+//     }
+//   }
+// }
+
 // Tablet
 @media only screen and(max-width:767px) {
   .wrap-login {
-    padding: 40px 40px 0px 40px;
+    padding: 20px 40px 0px 40px;
     .flex-login {
       justify-content: space-between;
       .flex50-left {
-        width: 36%;
+        width: 38%;
         .logo-box {
+          margin-bottom: 55px;
           .navi-logo {
             p {
               font-size: 11px;
@@ -387,9 +429,22 @@ $font-size-14px: 14px;
           &__acc {
             margin-bottom: 14px;
           }
-
           &__pass {
             margin-bottom: 18px;
+          }
+          &__acc,
+          &__pass {
+            .text-input {
+              padding: 14px 0px;
+              padding-left: 20px;
+            }
+          }
+          .box-login__btn {
+            a {
+              button {
+                padding: 14px 0px;
+              }
+            }
           }
           .forgot-pass {
             margin-bottom: 11px;
@@ -398,9 +453,13 @@ $font-size-14px: 14px;
       }
     }
     .box-support {
+      padding: 60px 0px;
       .box-support__detail {
-        width: 90%;
-        padding: 0px 30px;
+        div {
+          a {
+            font-size: 12px;
+          }
+        }
       }
     }
   }
@@ -410,29 +469,40 @@ $font-size-14px: 14px;
   .wrap-login {
     .box-support {
       .box-support__detail {
-        width: 90%;
-        padding: 0px 15px;
+        padding: 0px 20px;
       }
     }
   }
 }
 
 @media only screen and(max-width:700px) {
+  .wrap-login {
+    .box-support {
+      .box-support__detail {
+        width: 90%;
+        padding: 0px 30px;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:650px) {
+  .wrap-login {
+    .box-support {
+      .box-support__detail {
+        width: 90%;
+        padding: 0px 10px;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:614px) {
   .wrap-login {
     .box-support {
       .box-support__detail {
         width: 90%;
         padding: 0px;
-      }
-    }
-  }
-}
-
-@media only screen and(max-width:700px) {
-  .wrap-login {
-    .box-support {
-      .box-support__detail {
-        width: 100%;
       }
     }
   }
@@ -464,6 +534,15 @@ $font-size-14px: 14px;
         justify-content: center;
         align-items: center;
         margin: 60px 0px;
+        .box-login {
+          .box-login__btn {
+            a {
+              button {
+                font-size: 15px;
+              }
+            }
+          }
+        }
       }
     }
     .box-support {

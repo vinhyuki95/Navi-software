@@ -259,29 +259,53 @@
 }
 @media only screen and (max-width: 966px) {
   .wrap-login .box-support .box-support__detail {
-    padding: 0px 30px;
+    padding: 0px 25px;
   }
 }
 @media only screen and (max-width: 920px) {
-  .wrap-login .box-support .box-support__detail {
-    padding: 0px 20px;
-  }
-}
-@media only screen and (max-width: 850px) {
-  .wrap-login .box-support .box-support__detail {
-    width: 80%;
-    padding: 0px 40px;
-  }
-}
-@media only screen and (max-width: 767px) {
   .wrap-login {
     padding: 40px 40px 0px 40px;
   }
   .wrap-login .flex-login {
     justify-content: space-between;
   }
+  .wrap-login .flex-login .flex50-right {
+    width: 40%;
+  }
+  .wrap-login .box-support .box-support__detail {
+    padding: 0px 20px;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .wrap-login .box-support .box-support__detail {
+    width: 80%;
+    padding: 0px 30px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .wrap-login .box-support .box-support__detail {
+    width: 80%;
+    padding: 0px 25px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .wrap-login .box-support .box-support__detail {
+    width: 80%;
+    padding: 0px 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrap-login {
+    padding: 20px 40px 0px 40px;
+  }
+  .wrap-login .flex-login {
+    justify-content: space-between;
+  }
   .wrap-login .flex-login .flex50-left {
-    width: 36%;
+    width: 38%;
+  }
+  .wrap-login .flex-login .flex50-left .logo-box {
+    margin-bottom: 55px;
   }
   .wrap-login .flex-login .flex50-left .logo-box .navi-logo p {
     font-size: 11px;
@@ -305,29 +329,44 @@
   .wrap-login .flex-login .flex50-right .box-login__pass {
     margin-bottom: 18px;
   }
+  .wrap-login .flex-login .flex50-right .box-login__acc .text-input, .wrap-login .flex-login .flex50-right .box-login__pass .text-input {
+    padding: 14px 0px;
+    padding-left: 20px;
+  }
+  .wrap-login .flex-login .flex50-right .box-login .box-login__btn a button {
+    padding: 14px 0px;
+  }
   .wrap-login .flex-login .flex50-right .box-login .forgot-pass {
     margin-bottom: 11px;
   }
+  .wrap-login .box-support {
+    padding: 60px 0px;
+  }
+  .wrap-login .box-support .box-support__detail div a {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 737px) {
+  .wrap-login .box-support .box-support__detail {
+    padding: 0px 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
   .wrap-login .box-support .box-support__detail {
     width: 90%;
     padding: 0px 30px;
   }
 }
-@media only screen and (max-width: 737px) {
+@media only screen and (max-width: 650px) {
   .wrap-login .box-support .box-support__detail {
     width: 90%;
-    padding: 0px 15px;
+    padding: 0px 10px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 614px) {
   .wrap-login .box-support .box-support__detail {
     width: 90%;
     padding: 0px;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .wrap-login .box-support .box-support__detail {
-    width: 100%;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -354,6 +393,9 @@
     justify-content: center;
     align-items: center;
     margin: 60px 0px;
+  }
+  .wrap-login .flex-login .flex50-right .box-login .box-login__btn a button {
+    font-size: 15px;
   }
   .wrap-login .box-support {
     display: none;
