@@ -53,6 +53,7 @@
   line-height: 16px;
   max-width: 534px;
   width: 100%;
+  padding-right: 58px;
 }
 .wrap-login .flex50-left .img-banner {
   max-width: 635px;
@@ -181,7 +182,7 @@
   justify-content: space-between;
 }
 .box-support .box-support__detail {
-  width: 60%;
+  width: 45%;
   display: flex;
 }
 .box-support .box-support__detail div {
@@ -201,17 +202,25 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .wrap-login .flex50-left .logo-box p {
+  .wrap-login .flex-login .flex50-left .logo-box p {
     padding-right: 38px;
+  }
+  .wrap-login .box-support .box-support__detail {
+    width: 55%;
+    display: flex;
   }
 }
 @media only screen and (max-width: 1199px) {
-  .wrap-login .flex50-left .logo-box p {
+  .wrap-login .flex-login .flex50-left .logo-box p {
     padding-right: 30px;
   }
-  .wrap-login .flex50-left .img-banner {
+  .wrap-login .flex-login .flex50-left .img-banner {
     max-width: 600px;
     width: 100%;
+  }
+  .wrap-login .box-support .box-support__detail {
+    width: 50%;
+    display: flex;
   }
 
   .flex50-right .box-login {

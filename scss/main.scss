@@ -82,6 +82,7 @@ $font-size-14px: 14px;
         line-height: 16px;
         max-width: 534px;
         width: 100%;
+        padding-right: 58px;
       }
     }
     .img-banner {
@@ -216,7 +217,7 @@ $font-size-14px: 14px;
   display: flex;
   justify-content: space-between;
   .box-support__detail {
-    width: 60%;
+    width: 45%;
     display: flex;
     div {
       font-size: $font-size-14px;
@@ -240,9 +241,17 @@ $font-size-14px: 14px;
 // Laptop
 @media only screen and(min-width:1200px) {
   .wrap-login {
-    .flex50-left {
-      .logo-box p {
-        padding-right: 38px;
+    .flex-login {
+      .flex50-left {
+        .logo-box p {
+          padding-right: 38px;
+        }
+      }
+    }
+    .box-support {
+      .box-support__detail {
+        width: 55%;
+        display: flex;
       }
     }
   }
@@ -250,13 +259,21 @@ $font-size-14px: 14px;
 
 @media only screen and(max-width: 1199px) {
   .wrap-login {
-    .flex50-left {
-      .logo-box p {
-        padding-right: 30px;
+    .flex-login {
+      .flex50-left {
+        .logo-box p {
+          padding-right: 30px;
+        }
+        .img-banner {
+          max-width: 600px;
+          width: 100%;
+        }
       }
-      .img-banner {
-        max-width: 600px;
-        width: 100%;
+    }
+    .box-support {
+      .box-support__detail {
+        width: 50%;
+        display: flex;
       }
     }
   }
