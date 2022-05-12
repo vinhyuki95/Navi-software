@@ -23,7 +23,7 @@ $font-size-14px: 14px;
   border-radius: $boder-radius;
   cursor: $cursor;
 }
-@mixin CSShover($color: #38ada9) {
+@mixin CSShover($color: #0652dd) {
   color: $color;
 }
 
@@ -33,7 +33,7 @@ $font-size-14px: 14px;
   box-sizing: border-box;
 }
 
-.container {
+.custom-container {
   width: 100%;
   max-width: 1890px;
   margin: 0 auto;
@@ -339,16 +339,6 @@ $font-size-14px: 14px;
   }
 }
 
-// @media only screen and(max-width:1136px) {
-//   .wrap-login {
-//     .box-support {
-//       .box-support__detail {
-//         width: 60%;
-//       }
-//     }
-//   }
-// }
-
 // Tablet
 @media only screen and(max-width:991px) {
   .flex-login {
@@ -433,17 +423,6 @@ $font-size-14px: 14px;
     }
   }
 }
-
-// @media only screen and(max-width:768px) {
-//   .wrap-login {
-//     .box-support {
-//       .box-support__detail {
-//         width: 80%;
-//         padding: 0px 14px;
-//       }
-//     }
-//   }
-// }
 
 // Tablet
 @media only screen and(max-width:767px) {
@@ -598,3 +577,125 @@ $font-size-14px: 14px;
     }
   }
 }
+
+// market
+.custom-container {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0px;
+    padding: 20px 17px;
+    background-color: $bg-color;
+    align-items: center;
+  }
+}
+.header-left {
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--logo {
+      a {
+        text-decoration: none;
+        .lg-name {
+          margin-left: 12px;
+        }
+      }
+    }
+    &--navigation {
+      margin-left: 50px;
+      display: flex;
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+      }
+    }
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      font-size: $font-size-14px;
+      margin-left: 20px;
+      color: $color-gray;
+    }
+    a:hover {
+      @include CSShover();
+    }
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.flex-center {
+  padding: 5px 20px;
+  border-right: 1px solid $color-gray;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  span {
+    margin-left: 10px;
+    color: $color-gray;
+  }
+  span:hover {
+    @include CSShover();
+  }
+  .star {
+    margin-left: 26px;
+    width: 36px;
+    height: 22px;
+    background-color: #cf422f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    img {
+      margin: 0px;
+      height: 50%;
+      width: 50%;
+    }
+  }
+  p {
+    padding-left: 10px;
+    color: $color-gray;
+  }
+  p:hover {
+    @include CSShover();
+  }
+  img {
+    margin-left: 5px;
+  }
+}
+
+// account
+.account {
+  display: flex;
+  align-items: center;
+  .ring-box {
+    padding-left: 35px;
+  }
+  .avata-girl {
+    padding-left: 30px;
+  }
+  p {
+    color: $color-gray;
+    padding-left: 10px;
+  }
+  p:hover {
+    @include CSShover();
+  }
+  .dropdown-icon {
+    padding-left: 14px;
+  }
+}
+
+// end-market
