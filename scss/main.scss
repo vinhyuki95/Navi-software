@@ -23,8 +23,9 @@ $font-size-14px: 14px;
   border-radius: $boder-radius;
   cursor: $cursor;
 }
-@mixin CSShover($color: #0652dd) {
+@mixin CSShover($color: #c4e538) {
   color: $color;
+  font-size: 16x;
 }
 
 * {
@@ -33,7 +34,7 @@ $font-size-14px: 14px;
   box-sizing: border-box;
 }
 
-.custom-container {
+.login-container {
   width: 100%;
   max-width: 1890px;
   margin: 0 auto;
@@ -61,7 +62,6 @@ $font-size-14px: 14px;
       margin-bottom: 105px;
       padding-left: 20px;
       .navi-logo {
-        // margin-bottom: 34px;
         display: flex;
         justify-content: flex-start;
         max-width: 100px;
@@ -114,7 +114,8 @@ $font-size-14px: 14px;
       color: $color-white;
     }
     &__logo:hover {
-      @include CSShover();
+      color: #c4e538;
+      font-size: 34px;
     }
     &__account,
     &__password {
@@ -170,10 +171,10 @@ $font-size-14px: 14px;
           border: none;
           outline: none;
         }
-      }
-      button:hover {
-        background-color: $color-green;
-        color: $color-white;
+        button:hover {
+          background-color: $color-white;
+          color: $color-black;
+        }
       }
     }
     .forgot-pass {
@@ -208,7 +209,7 @@ $font-size-14px: 14px;
 
 .box-support::before {
   content: "";
-  width: 50%;
+  width: 10%;
 }
 
 .box-support {
@@ -217,8 +218,8 @@ $font-size-14px: 14px;
   display: flex;
   justify-content: space-between;
   .box-support__detail {
-    width: 45%;
     display: flex;
+    padding-right: 100px;
     div {
       font-size: $font-size-14px;
       a {
@@ -227,8 +228,7 @@ $font-size-14px: 14px;
         line-height: 20px;
       }
       a:hover {
-        // @include CSShover();
-        color: $color-white;
+        @include CSShover();
       }
     }
     div:nth-child(2),
@@ -238,315 +238,57 @@ $font-size-14px: 14px;
   }
 }
 
-// Laptop
+// responsive
+// laptop
 @media only screen and (min-width: 1200px) {
-  .wrap-login {
-    .flex-login {
-      .flex50-left {
-        .logo-box p {
-          padding-right: 38px;
-        }
-      }
-    }
-    .box-support {
-      .box-support__detail {
-        display: flex;
-      }
-    }
-  }
 }
 
-@media only screen and(max-width:1543px) {
-  .wrap-login {
-    .box-support {
-      .box-support__detail {
-        width: 50%;
-        display: flex;
-      }
-    }
-  }
-}
-
-@media only screen and(max-width: 1199px) {
-  .wrap-login {
-    .flex-login {
-      .flex50-left {
-        .logo-box p {
-          padding-right: 30px;
-        }
-        .img-banner {
-          max-width: 600px;
-          width: 100%;
-        }
-      }
-    }
-    .box-support {
-      .box-support__detail {
-        width: 50%;
-        display: flex;
-      }
-    }
-  }
-
-  .flex50-right {
-    .box-login {
-      max-width: 300px;
-      width: 100%;
-    }
-  }
-
+@media only screen and(max-width:1189px) {
   .box-support {
     .box-support__detail {
-      div:nth-child(2),
-      div:nth-child(3) {
-        margin-left: 30px;
-      }
+      display: flex;
+      padding-right: 180px;
     }
+  }
+  .box-support::before {
+    content: "";
+    width: 5%;
+    padding-left: 180px;
   }
 }
 
-@media only screen and(max-width:1136px) {
-  .wrap-login {
-    .box-support {
-      .box-support__detail {
-        width: 60%;
-      }
+@media only screen and(max-width:1066px) {
+  .box-support {
+    .box-support__detail {
+      display: flex;
+      padding-right: 100px;
     }
+  }
+  .box-support::before {
+    content: "";
+    width: 5%;
+    padding-left: 100px;
   }
 }
 
-@media only screen and(max-width:1100px) {
+@media only screen and(max-width:991px) {
   .wrap-login {
-    .box-support::before {
-      display: none;
-    }
-    .box-support {
-      width: 100%;
+    position: relative;
+    .flex-login {
       display: flex;
       justify-content: center;
       align-items: center;
-      .box-support__detail {
-        width: 70%;
-        padding: 0px 70px;
-        display: flex;
-        justify-content: space-between;
-        div:nth-child(2),
-        div:nth-child(3) {
-          margin-left: 0px;
-        }
-      }
-    }
-  }
-}
-
-// Tablet
-@media only screen and(max-width:991px) {
-  .flex-login {
-    .flex50-left {
-      .logo-box {
-        p {
-          margin-top: 28px;
-        }
-      }
-    }
-    .flex50-right {
-      .box-login__logo {
-        margin-bottom: 48px;
-      }
-    }
-  }
-  .wrap-login {
-    .box-support {
-      .box-support__detail {
-        padding: 0px 50px;
-      }
-    }
-  }
-}
-
-@media only screen and(max-width:966px) {
-  .wrap-login {
-    .box-support {
-      .box-support__detail {
-        padding: 0px 25px;
-      }
-    }
-  }
-}
-
-@media only screen and(max-width:920px) {
-  .wrap-login {
-    // padding: 40px 40px 0px 40px;
-    .flex-login {
-      justify-content: space-between;
-      .flex50-right {
-        width: 40%;
-      }
-    }
-    .box-support {
-      .box-support__detail {
-        padding: 0px 20px;
-      }
-    }
-  }
-}
-
-@media only screen and(max-width:870px) {
-  .wrap-login {
-    .box-support {
-      .box-support__detail {
-        width: 80%;
-        padding: 0px 30px;
-      }
-    }
-  }
-}
-
-@media only screen and(max-width:850px) {
-  .wrap-login {
-    .box-support {
-      .box-support__detail {
-        width: 80%;
-        padding: 0px 25px;
-      }
-    }
-  }
-}
-
-@media only screen and(max-width:800px) {
-  .wrap-login {
-    .box-support {
-      .box-support__detail {
-        width: 80%;
-        padding: 0px 10px;
-      }
-    }
-  }
-}
-
-// Tablet
-@media only screen and(max-width:767px) {
-  .wrap-login {
-    padding: 20px 40px 0px 40px;
-    .flex-login {
-      justify-content: space-between;
+      margin: 50px 0px;
       .flex50-left {
-        width: 38%;
+        width: 0%;
         .logo-box {
-          margin-bottom: 55px;
           .navi-logo {
-            p {
-              font-size: 11px;
-            }
-          }
-        }
-      }
-      .flex50-right {
-        width: 50%;
-        .box-login {
-          max-width: 270px;
-          &__logo {
-            font-size: 24px;
-            margin-bottom: 30px;
-          }
-          &__account,
-          &__password {
-            margin-bottom: 6px;
-          }
-          &__acc {
-            margin-bottom: 14px;
-          }
-          &__pass {
-            margin-bottom: 18px;
-          }
-          &__acc,
-          &__pass {
-            .text-input {
-              padding: 14px 0px;
-              padding-left: 20px;
-            }
-          }
-          .box-login__btn {
+            position: absolute;
+            top: 20px;
+            left: 50px;
             a {
-              button {
-                padding: 14px 0px;
-              }
+              max-width: 50px;
             }
-          }
-          .forgot-pass {
-            margin-bottom: 11px;
-          }
-        }
-      }
-    }
-    .box-support {
-      padding: 60px 0px;
-      .box-support__detail {
-        div {
-          a {
-            font-size: 12px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and(max-width:737px) {
-  .wrap-login {
-    .box-support {
-      .box-support__detail {
-        padding: 0px 20px;
-      }
-    }
-  }
-}
-
-@media only screen and(max-width:700px) {
-  .wrap-login {
-    .box-support {
-      .box-support__detail {
-        width: 90%;
-        padding: 0px 30px;
-      }
-    }
-  }
-}
-
-@media only screen and(max-width:650px) {
-  .wrap-login {
-    .box-support {
-      .box-support__detail {
-        width: 90%;
-        padding: 0px 10px;
-      }
-    }
-  }
-}
-
-@media only screen and(max-width:614px) {
-  .wrap-login {
-    .box-support {
-      .box-support__detail {
-        width: 90%;
-        padding: 0px;
-      }
-    }
-  }
-}
-// Mobile
-@media only screen and(max-width: 576px) {
-  .wrap-login {
-    padding: 40px;
-    position: relative;
-    .flex-login {
-      .flex50-left {
-        position: absolute;
-        .logo-box {
-          .navi-logo {
-            opacity: 0.2;
-            height: 40px;
-            width: 100px;
           }
           p {
             display: none;
@@ -557,28 +299,53 @@ $font-size-14px: 14px;
         }
       }
       .flex50-right {
+        max-width: 360px;
         width: 100%;
-        justify-content: center;
-        align-items: center;
-        margin: 60px 0px;
         .box-login {
-          .box-login__btn {
-            a {
-              button {
-                font-size: 15px;
-              }
-            }
+          &__logo {
+            margin-bottom: 45px;
           }
         }
       }
     }
-    .box-support {
-      display: none;
+  }
+  .box-support {
+    display: none;
+  }
+}
+
+@media only screen and(max-width: 767px) {
+  .flex50-right {
+    .box-login {
+      max-width: 300px;
+      &__logo {
+        font-size: 30px;
+      }
+      &__acc,
+      &__pass {
+        input {
+          padding: 14px 0px;
+          padding-left: 16px;
+        }
+      }
+      &__btn {
+        a {
+          button {
+            padding: 14px 0px;
+          }
+        }
+      }
     }
   }
 }
 
 // market
+.container {
+  width: 100%;
+  max-width: 1890px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .custom-container {
   .header {
     display: flex;
@@ -667,6 +434,7 @@ $font-size-14px: 14px;
   p {
     padding-left: 10px;
     color: $color-gray;
+    margin: 0px;
   }
   p:hover {
     @include CSShover();
@@ -689,9 +457,11 @@ $font-size-14px: 14px;
   p {
     color: $color-gray;
     padding-left: 10px;
+    margin: 0px;
   }
   p:hover {
     @include CSShover();
+    margin: 0px;
   }
   .dropdown-icon {
     padding-left: 14px;
