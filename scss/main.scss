@@ -36,9 +36,9 @@ $font-size-14px: 14px;
 
 .login-container {
   width: 100%;
-  max-width: 1890px;
-  margin: 0 auto;
-  padding: 0 15px;
+  max-width: 1920px;
+  // margin: 0 auto;
+  // height: 100vh;
 }
 
 .wrap-login {
@@ -47,7 +47,8 @@ $font-size-14px: 14px;
   background-image: url(../img/BG.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 67px 56px 67px 56px;
+  // padding: 67px 56px 67px 56px;
+  height: 100vh;
   .flex-login {
     display: flex;
   }
@@ -55,6 +56,8 @@ $font-size-14px: 14px;
   // flex50-left
   .flex50-left {
     width: 40%;
+    padding-top: 60px;
+    padding-left: 56px;
     .logo-box {
       display: flex;
       flex-direction: column;
@@ -103,6 +106,7 @@ $font-size-14px: 14px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 185px;
   .box-login {
     max-width: 395px;
     width: 100%;
@@ -211,261 +215,210 @@ $font-size-14px: 14px;
   content: "";
   width: 10%;
 }
-
 .box-support {
-  padding: 80px 0px 5px 0px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  .box-support__detail {
+  margin-top: auto;
+  width: 100%;
+  .support__detail {
     display: flex;
-    padding-right: 100px;
-    div {
-      font-size: $font-size-14px;
-      a {
-        text-decoration: none;
-        color: $color-gray;
-        line-height: 20px;
-      }
-      a:hover {
-        @include CSShover();
-      }
-    }
-    div:nth-child(2),
-    div:nth-child(3) {
-      margin-left: 40px;
+    padding-right: 208px;
+    a {
+      text-decoration: none;
+      color: $color-gray;
+      padding: 0px 20px;
     }
   }
 }
+
+// .box-support::before {
+//   content: "";
+//   width: 10%;
+// }
+
+// .box-support {
+//   padding: 80px 0px 5px 0px;
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-between;
+//   .box-support__detail {
+//     display: flex;
+//     padding-right: 100px;
+//     div {
+//       font-size: $font-size-14px;
+//       a {
+//         text-decoration: none;
+//         color: $color-gray;
+//         line-height: 20px;
+//       }
+//       a:hover {
+//         @include CSShover();
+//       }
+//     }
+//     div:nth-child(2),
+//     div:nth-child(3) {
+//       margin-left: 40px;
+//     }
+//   }
+// }
 
 // responsive
-// laptop
-@media only screen and (min-width: 1200px) {
-}
+// // laptop
+// @media only screen and (min-width: 1200px) {
+// }
 
-@media only screen and(max-width:1189px) {
-  .box-support {
-    .box-support__detail {
-      display: flex;
-      padding-right: 180px;
-    }
-  }
-  .box-support::before {
-    content: "";
-    width: 5%;
-    padding-left: 180px;
-  }
-}
+// @media only screen and(max-width:1189px) {
+//   .box-support {
+//     .box-support__detail {
+//       display: flex;
+//       padding-right: 180px;
+//     }
+//   }
+//   .box-support::before {
+//     content: "";
+//     width: 5%;
+//     padding-left: 180px;
+//   }
+// }
 
-@media only screen and(max-width:1066px) {
-  .box-support {
-    .box-support__detail {
-      display: flex;
-      padding-right: 100px;
-    }
-  }
-  .box-support::before {
-    content: "";
-    width: 5%;
-    padding-left: 100px;
-  }
-}
+// @media only screen and(max-width:1066px) {
+//   .box-support {
+//     .box-support__detail {
+//       display: flex;
+//       padding-right: 100px;
+//     }
+//   }
+//   .box-support::before {
+//     content: "";
+//     width: 5%;
+//     padding-left: 100px;
+//   }
+// }
 
-@media only screen and(max-width:991px) {
-  .wrap-login {
-    position: relative;
-    .flex-login {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 50px 0px;
-      .flex50-left {
-        width: 0%;
-        .logo-box {
-          .navi-logo {
-            position: absolute;
-            top: 20px;
-            left: 50px;
-            a {
-              max-width: 50px;
-            }
-          }
-          p {
-            display: none;
-          }
-        }
-        .img-banner {
-          display: none;
-        }
-      }
-      .flex50-right {
-        max-width: 360px;
-        width: 100%;
-        .box-login {
-          &__logo {
-            margin-bottom: 45px;
-          }
-        }
-      }
-    }
-  }
-  .box-support {
-    display: none;
-  }
-}
+// @media only screen and(max-width:991px) {
+//   .wrap-login {
+//     position: relative;
+//     .flex-login {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       margin: 50px 0px;
+//       .flex50-left {
+//         width: 0%;
+//         .logo-box {
+//           .navi-logo {
+//             position: absolute;
+//             top: 20px;
+//             left: 50px;
+//             a {
+//               max-width: 50px;
+//             }
+//           }
+//           p {
+//             display: none;
+//           }
+//         }
+//         .img-banner {
+//           display: none;
+//         }
+//       }
+//       .flex50-right {
+//         max-width: 360px;
+//         width: 100%;
+//         .box-login {
+//           &__logo {
+//             margin-bottom: 45px;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .box-support {
+//     display: none;
+//   }
+// }
 
-@media only screen and(max-width: 767px) {
-  .flex50-right {
-    .box-login {
-      max-width: 300px;
-      &__logo {
-        font-size: 30px;
-      }
-      &__acc,
-      &__pass {
-        input {
-          padding: 14px 0px;
-          padding-left: 16px;
-        }
-      }
-      &__btn {
-        a {
-          button {
-            padding: 14px 0px;
-          }
-        }
-      }
-    }
-  }
-}
+// @media only screen and(max-width: 767px) {
+//   .flex50-right {
+//     .box-login {
+//       max-width: 300px;
+//       &__logo {
+//         font-size: 30px;
+//       }
+//       &__acc,
+//       &__pass {
+//         input {
+//           padding: 14px 0px;
+//           padding-left: 16px;
+//         }
+//       }
+//       &__btn {
+//         a {
+//           button {
+//             padding: 14px 0px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-// market
-.container {
-  width: 100%;
-  max-width: 1890px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.custom-container {
-  .header {
+// MARKET PAGE
+.container-fluid {
+  .header-wrap {
+    // background-color: $bg-color;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
-    margin: 80px 0px;
-    padding: 20px 17px;
-    background-color: $bg-color;
-    align-items: center;
   }
 }
 .header-left {
   &__content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px 0px;
     &--logo {
+      display: flex;
+      align-items: center;
       a {
-        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
         .lg-name {
           margin-left: 12px;
         }
       }
     }
     &--navigation {
-      margin-left: 50px;
-      display: flex;
+      padding-left: 50px;
       .navbar {
         display: flex;
-        justify-content: space-between;
         margin: 0px;
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          padding: 0px;
+          a {
+            text-decoration: none;
+            color: $color-gray;
+            font-size: $font-size-14px;
+            padding: 0px 16px;
+          }
+        }
       }
     }
   }
 }
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  li {
-    list-style: none;
-    a {
-      text-decoration: none;
-      font-size: $font-size-14px;
-      margin-left: 20px;
-      color: $color-gray;
-    }
-    a:hover {
-      @include CSShover();
-    }
-  }
-}
 
+// header-right
 .header-right {
   display: flex;
   align-items: center;
-  margin-left: auto;
-}
-.flex-center {
-  padding: 5px 20px;
-  border-right: 1px solid $color-gray;
-  display: flex;
-  align-items: center;
-  // justify-content: center;
-  span {
-    margin-left: 10px;
-    color: $color-gray;
-  }
-  span:hover {
-    @include CSShover();
-  }
-  .star {
-    margin-left: 26px;
-    width: 36px;
-    height: 22px;
-    background-color: #cf422f;
+  .flex-center {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 4px;
-    img {
-      margin: 0px;
-      height: 50%;
-      width: 50%;
-    }
   }
-  p {
-    padding-left: 10px;
-    color: $color-gray;
-    margin: 0px;
-  }
-  p:hover {
-    @include CSShover();
-  }
-  img {
-    margin-left: 5px;
+  .account {
+    display: flex;
   }
 }
-
-// account
-.account {
-  display: flex;
-  align-items: center;
-  .ring-box {
-    padding-left: 35px;
-  }
-  .avata-girl {
-    padding-left: 30px;
-  }
-  p {
-    color: $color-gray;
-    padding-left: 10px;
-    margin: 0px;
-  }
-  p:hover {
-    @include CSShover();
-    margin: 0px;
-  }
-  .dropdown-icon {
-    padding-left: 14px;
-  }
-}
-
-// end-market
