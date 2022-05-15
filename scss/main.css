@@ -211,10 +211,16 @@
 
   .box-support {
     display: none; } }
-.container-fluid .header-wrap {
-  background-color: #ffffff;
+.header-container {
   display: flex;
-  justify-content: space-between; }
+  width: 100%;
+  max-width: 1920px; }
+  .header-container .header-wrap {
+    width: 100%;
+    padding: 0px 17px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #131721; }
 
 .header-left__content {
   display: flex;
@@ -250,7 +256,48 @@
   .header-right .flex-center {
     display: flex;
     align-items: center; }
+    .header-right .flex-center .img-transaction {
+      padding: 0px 18px 0px 5px;
+      color: #e7ab21; }
+    .header-right .flex-center span {
+      color: #e7ab21;
+      font-size: 16px;
+      padding-left: 18px;
+      padding-right: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .header-right .flex-center .star {
+      height: 27px;
+      width: 38px;
+      background-color: #cf422f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px; }
+      .header-right .flex-center .star img {
+        height: 12px; }
+    .header-right .flex-center p {
+      margin: 0px;
+      color: #a0a3af;
+      padding-left: 10px;
+      padding-right: 5px; }
+    .header-right .flex-center .dropdown-icon {
+      padding-left: 17px;
+      height: 7px; }
   .header-right .account {
-    display: flex; }
+    display: flex;
+    align-items: center; }
+    .header-right .account .ring-box {
+      padding: 0px 30px; }
+    .header-right .account .avata-girl {
+      padding: 0px 12px; }
+    .header-right .account p {
+      padding: 0px 12px;
+      margin: 0px;
+      color: #ffffff; }
+    .header-right .account .dropdown-icon {
+      padding-right: 26px;
+      height: 7px; }
 
 /*# sourceMappingURL=main.css.map */

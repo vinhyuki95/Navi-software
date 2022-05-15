@@ -312,12 +312,17 @@ $font-size-14px: 14px;
 }
 
 // MARKET PAGE
-.container-fluid {
+
+.header-container {
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
   .header-wrap {
-    // background-color: $bg-color;
-    background-color: #ffffff;
+    width: 100%;
+    padding: 0px 17px;
     display: flex;
     justify-content: space-between;
+    background-color: $bg-color;
   }
 }
 .header-left {
@@ -365,8 +370,59 @@ $font-size-14px: 14px;
   .flex-center {
     display: flex;
     align-items: center;
+    .img-transaction {
+      padding: 0px 18px 0px 5px;
+      color: $color-orange;
+    }
+    span {
+      color: $color-orange;
+      font-size: 16px;
+      padding-left: 18px;
+      padding-right: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .star {
+      height: 27px;
+      width: 38px;
+      background-color: #cf422f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      img {
+        height: 12px;
+      }
+    }
+    p {
+      margin: 0px;
+      color: $color-gray;
+      padding-left: 10px;
+      padding-right: 5px;
+    }
+    .dropdown-icon {
+      padding-left: 17px;
+      height: 7px;
+    }
   }
   .account {
     display: flex;
+    align-items: center;
+    .ring-box {
+      padding: 0px 30px;
+    }
+    .avata-girl {
+      padding: 0px 12px;
+    }
+    p {
+      padding: 0px 12px;
+      margin: 0px;
+      color: $color-white;
+    }
+    .dropdown-icon {
+      padding-right: 26px;
+      height: 7px;
+    }
   }
 }
