@@ -441,7 +441,7 @@ $font-size-12px: 12px;
     display: flex;
     // flex-wrap: nowrap;
     width: 120%;
-    padding: 16px 0px;
+    // padding: 16px 0px;
     background-color: #1d2029;
     overflow-x: hidden;
 
@@ -638,6 +638,14 @@ table {
       padding: 21px 32px;
       color: $color-white;
       background-color: $bg-color;
+    }
+    .residual {
+      background-color: $bg-color;
+      color: $color-gray;
+    }
+    .price {
+      background-color: $bg-color;
+      color: $color-white;
     }
     .green {
       background-color: $bg-color;

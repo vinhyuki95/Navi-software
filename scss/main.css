@@ -304,7 +304,6 @@
 .container .main-container {
   display: flex;
   width: 120%;
-  padding: 16px 0px;
   background-color: #1d2029;
   overflow-x: hidden; }
   .container .main-container .index-content {
@@ -440,6 +439,12 @@ table {
     padding: 21px 32px;
     color: #ffffff;
     background-color: #131721; }
+  table tr .residual {
+    background-color: #131721;
+    color: #a0a3af; }
+  table tr .price {
+    background-color: #131721;
+    color: #ffffff; }
   table tr .green {
     background-color: #131721; }
   table tr .title {
