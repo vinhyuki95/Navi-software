@@ -70,15 +70,14 @@
       margin-bottom: 55px;
       color: #ffffff; }
     .flex50-right .box-login__logo:hover {
-      color: #c4e538;
-      font-size: 34px; }
+      color: #dfe4ea; }
     .flex50-right .box-login__account, .flex50-right .box-login__password {
       font-size: 14px;
       line-height: 20px;
       color: #a0a3af;
       margin-bottom: 8px; }
     .flex50-right .box-login__account:hover, .flex50-right .box-login__password:hover {
-      color: #c4e538;
+      color: #b2bec3;
       font-size: 16x; }
     .flex50-right .box-login__acc input, .flex50-right .box-login__pass input {
       max-width: 395px;
@@ -92,8 +91,8 @@
       font-size: 14px;
       outline: none;
       border: none; }
-    .flex50-right .box-login__acc input:hover, .flex50-right .box-login__pass input:hover {
-      background-color: #b2bec3; }
+    .flex50-right .box-login__acc input:focus, .flex50-right .box-login__pass input:focus {
+      background-color: #57606f; }
     .flex50-right .box-login__acc {
       margin-bottom: 16px; }
     .flex50-right .box-login__pass {
@@ -119,7 +118,7 @@
         border: none;
         outline: none; }
       .flex50-right .box-login__btn a button:hover {
-        background-color: #ffffff;
+        background-color: #f6b93b;
         color: #252424; }
     .flex50-right .box-login .forgot-pass {
       margin-bottom: 20px; }
@@ -129,7 +128,7 @@
         font-size: 14px;
         text-decoration: none; }
       .flex50-right .box-login .forgot-pass a:hover {
-        color: #c4e538;
+        color: #b2bec3;
         font-size: 16x; }
     .flex50-right .box-login span {
       color: #a0a3af;
@@ -139,7 +138,7 @@
         text-decoration: none;
         font-size: 14px; }
     .flex50-right .box-login span:hover {
-      color: #c4e538;
+      color: #b2bec3;
       font-size: 16x; }
 
 .box-support::before {
@@ -160,7 +159,7 @@
       color: #a0a3af;
       padding: 0px 20px; }
     .box-support .support__detail a:hover {
-      color: #c4e538;
+      color: #b2bec3;
       font-size: 16x; }
 
 @media only screen and (min-width: 1200px) {
@@ -181,7 +180,10 @@
 
   .box-support::before {
     display: none; } }
-@media only screec and (max-wisth: 1049px) {
+@media only screen and (max-width: 1049px) {
+  .wrap-login .flex50-left .logo-box .img-banner img {
+    display: none; }
+
   .box-support .support__detail a {
     padding: 0px 14px; } }
 @media only screen and (max-width: 991px) {
@@ -192,7 +194,8 @@
       justify-content: center;
       align-items: center; }
       .wrap-login .flex-login .flex50-left {
-        width: 0%; }
+        width: 0%;
+        padding-left: 0px; }
         .wrap-login .flex-login .flex50-left .logo-box .navi-logo {
           position: absolute;
           top: 20px;
@@ -211,9 +214,20 @@
           margin-bottom: 45px; }
 
   .box-support {
+    position: absolute;
+    bottom: 40px;
+    padding: 0px;
+    margin: 0px; } }
+@media only screen and (max-width: 577px) {
+  .wrap-login .flex-login .flex50-left {
+    display: none; }
+
+  .box-support {
     display: none; } }
 #wrapper {
-  min-height: 100vh; }
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1920px; }
 
 .header-container {
   display: flex;
