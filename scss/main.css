@@ -5,6 +5,10 @@
   font-family: "Roboto";
 }
 
+.wrapper {
+  height: 100vh;
+}
+
 .login-container {
   width: 100%;
   max-width: 1920px;
@@ -297,7 +301,7 @@
 }
 .header-container .header-wrap {
   width: 100%;
-  padding: 0px 17px;
+  padding: 0px 15px;
   display: flex;
   justify-content: space-between;
   background-color: #131721;
@@ -410,17 +414,35 @@
   width: 100%;
   max-width: 1920px;
 }
-.block-main .main-box {
+.block-main .box-slider {
   display: flex;
-  width: 120%;
+  width: 1920px;
   background-color: #1d2029;
-  overflow-x: hidden;
   padding: 21px 0px;
 }
-.block-main .main-box .index-content {
+.block-main .box-slider .slick-slider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #292d38;
+  color: white;
+  border: none;
+  z-index: 2;
+}
+.block-main .box-slider .slick-prev {
+  left: 0;
+  padding-left: 4px;
+}
+.block-main .box-slider .slick-next {
+  right: 0;
+  padding-right: 4px;
+}
+.block-main .box-slider .slick-slider:hover {
+  color: #e7ab21;
+}
+.block-main .box-slider .index-content {
   border-top: hidden;
   display: flex;
-  justify-content: space-between;
   border-right: 1px solid #292d38;
   padding: 0px 21px;
   color: #ffffff;
@@ -602,12 +624,11 @@
 }
 #table_price tr .blackbg {
   color: #ffffff;
-  max-width: 70px;
-  width: 100%;
 }
 #table_price tr .border-left {
   color: #ffffff;
   border: 1px solid #282c37;
+  width: 90px;
 }
 #table_price tr .border-right {
   color: #a0a3af;

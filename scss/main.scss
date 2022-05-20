@@ -43,7 +43,9 @@ $font-size-12px: 12px;
   box-sizing: border-box;
   font-family: $font-family;
 }
-
+.wrapper {
+  height: 100vh;
+}
 .login-container {
   width: 100%;
   max-width: 1920px;
@@ -359,7 +361,7 @@ $font-size-12px: 12px;
   max-width: 1920px;
   .header-wrap {
     width: 100%;
-    padding: 0px 17px;
+    padding: 0px 15px;
     display: flex;
     justify-content: space-between;
     background-color: $bg-color;
@@ -475,17 +477,35 @@ $font-size-12px: 12px;
 .block-main {
   width: 100%;
   max-width: 1920px;
-  .main-box {
+  .box-slider {
     display: flex;
-    width: 120%;
+    width: 1920px;
     background-color: #1d2029;
-    overflow-x: hidden;
     padding: 21px 0px;
-
+    .slick-slider {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $gray-col-th;
+      color: white;
+      border: none;
+      z-index: 2;
+    }
+    .slick-prev {
+      left: 0;
+      padding-left: 4px;
+    }
+    .slick-next {
+      right: 0;
+      padding-right: 4px;
+    }
+    .slick-slider:hover {
+      color: $color-orange;
+    }
     .index-content {
       border-top: hidden;
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       border-right: 1px solid #292d38;
       padding: 0px 21px;
       color: #ffffff;
@@ -693,12 +713,13 @@ $font-size-12px: 12px;
     }
     .blackbg {
       color: $color-white;
-      max-width: 70px;
-      width: 100%;
+      // max-width: 40px;
+      // width: 100%;
     }
     .border-left {
       color: $color-white;
       @include CSSchangeborder();
+      width: 90px;
     }
     .border-right {
       color: $color-gray;
