@@ -43,6 +43,9 @@ $font-size-12px: 12px;
   box-sizing: border-box;
   font-family: $font-family;
 }
+body {
+  min-height: 100vh;
+}
 
 .login-container {
   width: 100%;
@@ -353,11 +356,47 @@ $font-size-12px: 12px;
 //   height: 100vh;
 // }
 #wrapper {
-  min-height: 100vw;
   width: 100%;
   max-width: 1920px;
   background-color: $bg-color;
+  position: relative;
 }
+// sidebar
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+// end-sidebar
 
 .header-wrap {
   padding: 0px 15px;
@@ -383,7 +422,7 @@ $font-size-12px: 12px;
       }
     }
     &--navigation {
-      padding-left: 50px;
+      padding-left: 30px;
       .navbar {
         display: flex;
         margin: 0px;
@@ -669,6 +708,7 @@ $font-size-12px: 12px;
       a {
         text-decoration: none;
         color: #797f8a;
+        padding: 4px;
       }
       a:hover {
         color: $color-orange;
@@ -685,6 +725,7 @@ $font-size-12px: 12px;
     .star-item {
       padding: 0px 10px;
       height: 14px;
+      margin-bottom: 4px;
     }
   }
   &--link {
