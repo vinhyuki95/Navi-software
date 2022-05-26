@@ -30,6 +30,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="wrapper">
@@ -38,10 +39,10 @@
         <div class="header-left">
           <div class="header-left__content">
             <div class="header-left__content--logo">
-              <a href="">
+              <a href="javascript:;">
                 <img src="./img/icon-menu.svg" alt="menu-icon" />
               </a>
-              <a href="">
+              <a href="javascript:;">
                 <img
                   class="lg-name"
                   src="./img/Logo-name(market).svg"
@@ -180,9 +181,8 @@
                   <span class="nb287">287</span>
                   <span class="nb12">(12)</span>
                   <span class="nb49">49</span>
-                  <span class="down-log"
-                    ><i class="fa-solid fa-down-long"></i> 82</span
-                  >
+                  <span class="down-log"><i class="fa-solid fa-down-long"></i> 82</span>
+                  
                   <span class="nb4">(4)</span>
                 </div>
               </div>
@@ -208,9 +208,7 @@
                   <span class="nb287">287</span>
                   <span class="nb12">(12)</span>
                   <span class="nb49">49</span>
-                  <span class="down-log"
-                    ><i class="fa-solid fa-down-long"></i> 82</span
-                  >
+                  <span class="down-log"><i class="fa-solid fa-down-long"></i> 82</span>
                   <span class="nb4">(4)</span>
                 </div>
               </div>
@@ -236,9 +234,7 @@
                   <span class="nb287">287</span>
                   <span class="nb12">(12)</span>
                   <span class="nb49">49</span>
-                  <span class="down-log"
-                    ><i class="fa-solid fa-down-long"></i> 82</span
-                  >
+                  <span class="down-log"><i class="fa-solid fa-down-long"></i> 82</span>
                   <span class="nb4">(4)</span>
                 </div>
               </div>
@@ -297,10 +293,10 @@
                     src="./img/Star-gray-color.png"
                     alt="star"
                   />
-                  <span><a href="">Ưu thích</a></span>
+                  <span><a href="javascript:;">Ưu thích</a></span>
                 </li>
                 <li class="block__item--link">
-                  <span><a href="">Top</a></span>
+                  <span><a href="javascript:;">Top</a></span>
                   <img
                     class="dropdown-stick"
                     src="./img/dropdown-stick.png"
@@ -308,25 +304,25 @@
                   />
                 </li>
                 <li class="block__item--link">
-                  <a class="hose" href="">HOSE</a>
+                  <a class="hose" href="javascript:;">HOSE</a>
                 </li>
                 <li class="block__item--link">
-                  <a href="">HSX</a>
+                  <a href="javascript:;">HSX</a>
                 </li>
                 <li class="block__item--link">
-                  <a href="">VN30</a>
+                  <a href="javascript:;">VN30</a>
                 </li>
                 <li class="block__item--link">
-                  <a href="">HNX30</a>
+                  <a href="javascript:;">HNX30</a>
                 </li>
                 <li class="block__item--link">
-                  <a href="">UPCOME</a>
+                  <a href="javascript:;">UPCOME</a>
                 </li>
                 <li class="block__item--link">
-                  <a href="">Thỏa thuận</a>
+                  <a href="javascript:;">Thỏa thuận</a>
                 </li>
                 <li class="block__item--link">
-                  <a href="">
+                  <a href="javascript:;">
                     <span>Theo ngành</span>
                     <img
                       class="dropdown-stick2"
@@ -336,41 +332,51 @@
                   </a>
                 </li>
                 <li class="block__item--link">
-                  <a href="">Chứng quyền</a>
+                  <a href="javascript:;">Chứng quyền</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="price-menu__right">
-            <img
-              class="detail-box"
+            <a href="#tab-table">
+              <img
+              class="detail-box tap-pane"
               src="./img/icon-detail-box.png"
               alt="detail-box"
             />
-            <img
-              class="thumbnail-icon"
+            </a>
+            <a href="#tab-detail-content">
+              <img
+              class="thumbnail-icon tap-pane" 
               src="./img/thumbnail-icon-box.png"
               alt="thumbnail-icon"
             />
-            <img
+            </a>
+            <a href="#">
+              <img
               class="detail-active"
               src="./img/icon-detail-box.active.png"
               alt="detail-box.active"
             />
-            <img
+          </a> 
+            <a href="#">
+              <img
               class="icon-install"
               src="./img/icon-install.png"
               alt="icon-install"
             />
-            <img
+            </a>
+            <a href="#">
+              <img
               class="deepzoom"
               src="./img/deepzoom-icon.png"
               alt=".deepzoom-icon"
             />
+            </a>  
           </div>
         </div>
         <!-- table -->
-        <table id="table_price">
+        <table class ="table_price" id="tab-table-content">
           <thead class="theader">
             <tr>
               <th rowspan="2" class="blackbg">Mã</th>
@@ -381,11 +387,11 @@
               <th colspan="3" class="border-right change-color">Khớp lệnh</th>
               <th colspan="6" class="border-right">Dư mua</th>
               <th rowspan="2" class="border-left change-padding">
-                <a href="">
+                <a href="javascript:;">
                   <img src="./img/prev-icon.png" alt="" />
                 </a>
                 <span>Tổng KL</span>
-                <a href="">
+                <a href="javascript:;">
                   <img src="./img/next-icon.png" alt="" />
                 </a>
               </th>
@@ -401,11 +407,11 @@
               <th class="price-item">KL 1</th>
               <th class="price-item change-color">Giá</th>
               <th class="price-item change-color">
-                <a href="">
+                <a href="javascript:;">
                   <img src="./img/prev-icon.png" alt="prev-icon" />
                 </a>
                 <span>+/-</span>
-                <a href="">
+                <a href="javascript:;">
                   <img src="./img/next-icon.png" alt="next-icon" />
                 </a>
               </th>
@@ -1183,8 +1189,1479 @@
           </tbody>
         </table>
       </div>
+      <div class="container-lg">
+        <div class="thembnail-block">
+          <divp class="row">
+            <div class="wrap-content" id="tab-detail-content">
+              <div class="col-lg-2">
+                <div class="price-board">
+                  <div class="price-board__top">
+                    <div class="price-board__top-dtList">
+                      <div>AAA</div>
+                      <div>1,325.28</div>
+                      <div>(+12.08 +0.93%)</div>
+                    </div>
+                    <img src="./img/Star 6-market2.png" alt="star-market2">
+                  </div>
+                  <div class="price-board__bottom">
+                  <div class="box-itemList">
+                    <div class="dt-box">
+                      <div>Tổng KL</div>
+                      <div>5,388,10</div>
+                    </div>
+                    <div class="dt-box">
+                      <div>KL Khớp</div>
+                      <div>180,90</div>
+                    </div>
+                    <div class="dt-box">
+                      <div>Mua</div>
+                      <div>
+                        <span class="txt-green">33.55</span>
+                        <span>|</span>
+                        <span>55,50</span>
+                      </div>
+                    </div>
+                    <div class="dt-box">
+                      <div>Bán</div>
+                      <div>
+                        <span  class="txt-green">33.6</span>
+                        <span>|</span>
+                        <span>8,90</span>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="price-board">
+                  <div class="price-board__top">
+                    <div class="price-board__top-dtList">
+                      <div>AAA</div>
+                      <div>1,325.28</div>
+                      <div>(+12.08 +0.93%)</div>
+                    </div>
+                    <img src="./img/Star 6-market2.png" alt="star-market2">
+                  </div>
+                  <div class="price-board__bottom">
+                  <div class="box-itemList">
+                    <div class="dt-box">
+                      <div>Tổng KL</div>
+                      <div>5,388,10</div>
+                    </div>
+                    <div class="dt-box">
+                      <div>KL Khớp</div>
+                      <div>180,90</div>
+                    </div>
+                    <div class="dt-box">
+                      <div>Mua</div>
+                      <div>
+                        <span class="txt-green">33.55</span>
+                        <span>|</span>
+                        <span>55,50</span>
+                      </div>
+                    </div>
+                    <div class="dt-box">
+                      <div>Bán</div>
+                      <div>
+                        <span  class="txt-green">33.6</span>
+                        <span>|</span>
+                        <span>8,90</span>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="price-board change-bg">
+                  <div class="price-board__top">
+                    <div class="price-board__top-dtList txt-red">
+                      <div>AAA</div>
+                      <div>1,325.28</div>
+                      <div>(+12.08 +0.93%)</div>
+                    </div>
+                    <img src="./img/Star 6-market2.png" alt="star-market2">
+                  </div>
+                  <div class="price-board__bottom">
+                  <div class="box-itemList">
+                    <div class="dt-box">
+                      <div>Tổng KL</div>
+                      <div>5,388,10</div>
+                    </div>
+                    <div class="dt-box">
+                      <div>KL Khớp</div>
+                      <div>180,90</div>
+                    </div>
+                    <div class="dt-box">
+                      <div>Mua</div>
+                      <div>
+                        <span class=" txt-red">33.55</span>
+                        <span>|</span>
+                        <span>55,50</span>
+                      </div>
+                    </div>
+                    <div class="dt-box">
+                      <div>Bán</div>
+                      <div>
+                        <span  class="txt-red">33.6</span>
+                        <span>|</span>
+                        <span>8,90</span>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="price-board">
+                  <div class="price-board__top">
+                    <div class="price-board__top-dtList">
+                      <div>AAA</div>
+                      <div>1,325.28</div>
+                      <div>(+12.08 +0.93%)</div>
+                    </div>
+                    <img src="./img/Star 6-market2.png" alt="star-market2">
+                  </div>
+                  <div class="price-board__bottom">
+                  <div class="box-itemList">
+                    <div class="dt-box">
+                      <div>Tổng KL</div>
+                      <div>5,388,10</div>
+                    </div>
+                    <div class="dt-box">
+                      <div>KL Khớp</div>
+                      <div>180,90</div>
+                    </div>
+                    <div class="dt-box">
+                      <div>Mua</div>
+                      <div>
+                        <span class="txt-green">33.55</span>
+                        <span>|</span>
+                        <span>55,50</span>
+                      </div>
+                    </div>
+                    <div class="dt-box">
+                      <div>Bán</div>
+                      <div>
+                        <span  class="txt-green">33.6</span>
+                        <span>|</span>
+                        <span>8,90</span>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="price-board">
+                  <div class="price-board__top">
+                    <div class="price-board__top-dtList">
+                      <div>AAA</div>
+                      <div>1,325.28</div>
+                      <div>(+12.08 +0.93%)</div>
+                    </div>
+                    <img src="./img/Star 6-market2.png" alt="star-market2">
+                  </div>
+                  <div class="price-board__bottom">
+                  <div class="box-itemList">
+                    <div class="dt-box">
+                      <div>Tổng KL</div>
+                      <div>5,388,10</div>
+                    </div>
+                    <div class="dt-box">
+                      <div>KL Khớp</div>
+                      <div>180,90</div>
+                    </div>
+                    <div class="dt-box">
+                      <div>Mua</div>
+                      <div>
+                        <span class="txt-green">33.55</span>
+                        <span>|</span>
+                        <span>55,50</span>
+                      </div>
+                    </div>
+                    <div class="dt-box">
+                      <div>Bán</div>
+                      <div>
+                        <span  class="txt-green">33.6</span>
+                        <span>|</span>
+                        <span>8,90</span>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="price-board change-bg">
+                  <div class="price-board__top">
+                    <div class="price-board__top-dtList txt-red">
+                      <div>AAA</div>
+                      <div>1,325.28</div>
+                      <div>(+12.08 +0.93%)</div>
+                    </div>
+                    <img src="./img/Star 6-market2.png" alt="star-market2">
+                  </div>
+                  <div class="price-board__bottom">
+                  <div class="box-itemList">
+                    <div class="dt-box">
+                      <div>Tổng KL</div>
+                      <div>5,388,10</div>
+                    </div>
+                    <div class="dt-box">
+                      <div>KL Khớp</div>
+                      <div>180,90</div>
+                    </div>
+                    <div class="dt-box">
+                      <div>Mua</div>
+                      <div>
+                        <span class="txt-red">33.55</span>
+                        <span>|</span>
+                        <span>55,50</span>
+                      </div>
+                    </div>
+                    <div class="dt-box">
+                      <div>Bán</div>
+                      <div>
+                        <span  class="txt-red">33.6</span>
+                        <span>|</span>
+                        <span>8,90</span>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="thembnail-block">
+                <divp class="row">
+                  <div class="wrap-content">
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList txt-red">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-red">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-red">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board change-bg">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board change-bg">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList txt-red">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-red">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-red">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+              <!-- end -->
+              <!--  -->
+              <div class="thembnail-block">
+                <divp class="row">
+                  <div class="wrap-content">
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board change-bg">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList txt-red">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green txt-red">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board change-bg">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList txt-red">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="text-red">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="text-red">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+              <!-- end -->
+              <!--  -->
+              <div class="thembnail-block">
+                <divp class="row">
+                  <div class="wrap-content">
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList txt-red">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-red">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-red">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board change-bg">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board change-bg">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList txt-red">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-red">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-red">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+              <!-- end -->
+              <!-- row5 -->
+              <div class="thembnail-block">
+                <divp class="row">
+                  <div class="wrap-content">
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList txt-green">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board change-bg">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList txt-red">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-red">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-red">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board change-bg">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList txt-red">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-red">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-red">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+              <!-- end -->
+              <!-- row6 -->
+              <div class="thembnail-block">
+                <divp class="row">
+                  <div class="wrap-content">
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board change-bg">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList txt-red">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-red">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-red">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="price-board change-bg">
+                        <div class="price-board__top">
+                          <div class="price-board__top-dtList txt-red">
+                            <div>AAA</div>
+                            <div>1,325.28</div>
+                            <div>(+12.08 +0.93%)</div>
+                          </div>
+                          <img src="./img/Star 6-market2.png" alt="star-market2">
+                        </div>
+                        <div class="price-board__bottom">
+                        <div class="box-itemList">
+                          <div class="dt-box">
+                            <div>Tổng KL</div>
+                            <div>5,388,10</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>KL Khớp</div>
+                            <div>180,90</div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Mua</div>
+                            <div>
+                              <span class="txt-green txt-red">33.55</span>
+                              <span>|</span>
+                              <span>55,50</span>
+                            </div>
+                          </div>
+                          <div class="dt-box">
+                            <div>Bán</div>
+                            <div>
+                              <span  class="txt-green">33.6</span>
+                              <span>|</span>
+                              <span>8,90</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+              <!-- end -->
+          </div>
+        </div>
+      </div>
     </div>
-    .
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"

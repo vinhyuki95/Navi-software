@@ -63,7 +63,7 @@ $font-size-12px: 12px;
 
   // flex50-left
   .flex50-left {
-    width: 40%;
+    width: 140px;
     padding-top: 60px;
     padding-left: 56px;
     .logo-box {
@@ -356,12 +356,13 @@ $font-size-12px: 12px;
   min-height: 100vw;
   width: 100%;
   max-width: 1920px;
+  background-color: $bg-color;
 }
 
 .header-wrap {
   padding: 0px 15px;
   display: flex;
-  display: flex;
+  height: 65px;
   justify-content: space-between;
   background-color: $bg-color;
 }
@@ -369,7 +370,6 @@ $font-size-12px: 12px;
 .header-left {
   &__content {
     display: flex;
-    padding: 5px 0px;
     &--logo {
       display: flex;
       align-items: center;
@@ -389,17 +389,20 @@ $font-size-12px: 12px;
         margin: 0px;
         li {
           list-style: none;
-          display: flex;
-          align-items: center;
           padding: 0px;
           a {
+            display: flex;
+            align-items: center;
+            height: 65px;
             text-decoration: none;
             color: $color-gray;
             font-size: $font-size-14px;
             padding: 0px 16px;
+            border-bottom: 2px;
           }
-          a:hover {
+          a:active {
             color: $color-orange;
+            border-bottom: 2px solid $color-orange;
           }
         }
       }
@@ -447,8 +450,7 @@ $font-size-12px: 12px;
       font-size: $font-size-12px;
     }
     .dropdown-icon {
-      padding-left: 4px;
-      padding-right: 17px;
+      padding: 0px 12px 0px 4px;
       height: 5px;
     }
   }
@@ -459,7 +461,7 @@ $font-size-12px: 12px;
       padding: 0px 20px;
     }
     .avata-girl {
-      padding: 0px 12px;
+      padding: 0px 8px;
     }
     p {
       padding: 0px 12px;
@@ -473,11 +475,13 @@ $font-size-12px: 12px;
 }
 
 // .block-main
+.block-main::-webkit-scrollbar {
+  width: 0 !important;
+}
 .block-main {
   width: 100%;
   padding: 0px;
   overflow-x: scroll;
-  overflow-y: hidden;
   white-space: no-wrap;
   .box-slider {
     display: flex;
@@ -516,7 +520,8 @@ $font-size-12px: 12px;
 
 .index-content {
   &__value {
-    width: 40%;
+    width: 100%;
+    max-width: 140px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -576,6 +581,8 @@ $font-size-12px: 12px;
   }
   &__boxchart {
     margin-top: auto;
+    width: 100%;
+    max-width: 177px;
   }
 }
 
@@ -589,7 +596,6 @@ $font-size-12px: 12px;
     justify-content: space-between;
     &__left {
       display: flex;
-      float: left;
       .block-search {
         padding: 0px;
         padding-left: 16px;
@@ -617,27 +623,26 @@ $font-size-12px: 12px;
     &__right {
       display: flex;
       align-items: center;
-      float: right;
       margin: 0px;
-      .detail-box {
-        padding: 0px 12px;
-      }
-      .thumbnail-icon {
-        padding-left: 12px;
-      }
-      .thumbanail-icon:hover {
-        color: $color-orange;
-      }
-      .detail-active {
-        padding: 0px 20px;
-        border-right: 1px solid #313645;
-      }
-      .icon-install {
-        padding-left: 20px;
-        padding-right: 12px;
-      }
-      .deepzoom {
-        padding: 0px 12px;
+      a {
+        text-decoration: none;
+        .detail-box {
+          padding: 0px 12px;
+        }
+        .thumbnail-icon {
+          padding-left: 12px;
+        }
+        .detail-active {
+          padding: 0px 20px;
+          border-right: 1px solid #313645;
+        }
+        .icon-install {
+          padding-left: 20px;
+          padding-right: 12px;
+        }
+        .deepzoom {
+          padding: 0px 12px;
+        }
       }
     }
   }
@@ -652,6 +657,8 @@ $font-size-12px: 12px;
     color: #ffffff;
     margin: 0px;
     padding: 0px;
+    width: 900px;
+    width: 100%;
     &--link {
       margin: 0px;
       display: flex;
@@ -704,9 +711,10 @@ $font-size-12px: 12px;
   text-align: center;
 }
 
-#table_price {
+.table_price {
   border-collapse: collapse;
   background-color: $bg-color;
+  height: 100vh;
   @include CSSborders();
   tr {
     @include CSSborders();
@@ -744,11 +752,11 @@ $font-size-12px: 12px;
   }
 }
 
-#table_price {
+.table_price {
   tr {
     td {
       @include textAlign();
-      padding: 3px 21px;
+      padding: 0px 21px;
       font-size: 11px;
       border: 1px solid #20232d;
     }
@@ -781,6 +789,19 @@ $font-size-12px: 12px;
     }
   }
 }
+
+@media only screen and(max-width: 1800px) {
+  .index-content {
+    max-width: 416px;
+  }
+}
+
+@media only screen and (max-width: 1331px) {
+  .price-menu {
+    overflow-x: hidden;
+  }
+}
+
 @media only screen and(max-width: 1309px) {
   .block {
     .block__item--link {
@@ -788,16 +809,54 @@ $font-size-12px: 12px;
     }
   }
 }
-@media only screen and(max-width: 1800px) {
-  .index-content {
-    max-width: 416px;
+@media only screen and (max-width: 1237px) {
+  .header-left__content--navigation {
+    padding-left: 10px;
+    .navbar {
+      li {
+        a {
+          padding: 0px 11px;
+        }
+      }
+    }
+  }
+  .block-main {
+    .box-slider {
+      .index-content {
+        padding: 0px 18px;
+      }
+    }
   }
 }
 
-@media only screen and (max-width: 1084px) {
+@media only screen and (max-width: 1109px) {
   .index-content {
     width: 100%;
     max-width: 500px;
+  }
+  .header-wrap {
+    padding: 10px 15px;
+  }
+  .header-left__content--navigation {
+    .header-wrap {
+      padding: 10px 15px;
+    }
+    .navbar {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1193px) {
+  .block {
+    .block__item {
+      .block__item--link {
+        padding: 0px 8px;
+        a {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
@@ -806,6 +865,7 @@ $font-size-12px: 12px;
   background-color: $bg-color;
   color: white;
   height: 100vh;
+  display: none;
 }
 
 .price-board {
@@ -813,8 +873,8 @@ $font-size-12px: 12px;
   padding: 18px 12px;
   border-radius: 5px;
   margin-top: 20px;
-
-  // width: 264px;
+  max-width: 295px;
+  width: 100%;
   &__top {
     display: flex;
     justify-content: space-between;
